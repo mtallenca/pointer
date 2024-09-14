@@ -1,16 +1,7 @@
-# pointer
+# PlatformView crash in beta
 
-A new Flutter project.
+Sample repo with a TextField in a dialog, TextField wrapped in a PointerInterceptor.
 
-## Getting Started
+with Flutter beta 3.26.0-0.1.pre, run this app in debug mode on an older iOS device that is capped at iOS 16 (ipad mini, iPad Pro 9.7, iPhone 6s, etc. 
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Open and close the dialog a few times. The app will crash in BringLayersIntoView (platform_views_controller.mm) 
